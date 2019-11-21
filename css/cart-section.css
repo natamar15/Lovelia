@@ -1,0 +1,142 @@
+
+#productosAgregados {
+    margin-top: 40px;
+    min-height: 800px;
+}
+
+#productosAgregados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#containerProductos {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.delete {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #68aa91;
+    border: 2px solid #8ed1b7;
+    border-radius: 5px;
+}
+
+.empty {
+    text-align: center;
+    width: 100%;
+    grid-column: 2/4;
+}
+
+.cantidad {
+    margin-left: 15px;
+}
+
+.card-text {
+    margin-top: 5px;
+}
+
+.imgCarrito {
+    grid-column: 2/4;
+}
+
+.imgCarrito img {
+    max-width: 100%;
+}
+
+/* PopUp de pago */
+.ui-dialog {
+    width: 900px !important;
+}
+
+.ui-dialog-titlebar {
+    background-color: #8ed1b7 !important;
+}
+
+#pagoForm {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: none;
+}
+
+#pagoForm .tarjetas {
+    width: 100%;
+    height: 120px;
+    background-image: url("../img/tarjetas.png");
+}
+
+#pagoForm form {
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+    width: 100%;
+}
+
+#pagoForm form input {
+    padding: 3px;
+    font-size: 15px;
+}
+
+#pagoForm form input[name="nombre"] {
+    width: 190px;
+}
+
+#pagoForm form input[name="mes"], input[name="ano"] {
+    width: 70px;
+}
+
+#pagoForm form input[name="codigo"] {
+    width: 80px;
+}
+
+.part1, .part2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.part2 .p1, .p2 {
+    width: 37%;
+}
+
+.part2 .p2 {
+    padding-left: 6px;
+}
+
+.pagar {
+    width: 88%;
+    margin: auto;
+}
+
+.pagar p {
+    font-size: 30px;
+}
+
+.pagar p .txt {
+    color: #4299dd;
+}
+
+.btnsCompra {
+    padding-bottom: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.botonYcheck {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonYcheck button {
+    border: none;
+    padding: 10px 50px;
+    background-color: #8ed1b7;
+    color: #fff;
+    font-weight: 600;
+}
